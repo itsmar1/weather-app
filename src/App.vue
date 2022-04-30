@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="h-screen w-full bg-gray-100">
+    <div class="flex flex-col h-full">
+      <div class="">search</div>
+        <div class="w-[70vw] h-[200px] ml-auto ">
+          <div class="grid grid-cols-1 lg:grid-cols-7 ">
+            <div>DAY</div>
+            <div>DAY</div>
+            <div>DAY</div>
+            <div>DAY</div>
+            <div>DAY</div>
+            <div>DAY</div>
+            <div>DAY</div>
+          </div>
+        </div>
+      <div class=" mt-auto mb-[30vh] ml-[30vw] ">
+        city
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
