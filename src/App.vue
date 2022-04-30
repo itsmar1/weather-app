@@ -23,8 +23,8 @@
           <div>DAY</div>
         </div>
       </div>
-      <div class=" mt-auto mb-[30vh] ml-[30vw] ">
-        city
+      <div v-if="!loading" class=" mt-auto mb-[30vh] ml-[30vw] ">
+        <current-temp :city="cityMeteo.cityName" :degree="cityMeteo.degree" :image="cityMeteo.image" :description="cityMeteo.description" ></current-temp>
       </div>
     </div>
   </div>
@@ -32,9 +32,14 @@
 
 <script>
 
+import CurrentTemp from './components/CurrentTemp.vue';
+import { getCityWeather } from './MeteoApi/api';
 
 export default {
   name: 'App',
+  components: {
+    CurrentTemp
+  },
   data() {
     return {
       search: '',
@@ -43,9 +48,20 @@ export default {
     }
   },
   methods: {
-    searchCity() {
-
+    async searchCity() {
+      this.loading = true;
+      if (this.search === ''){
+        this.search = 'london';
+      }
+      const data = await getCityWeather(this.search);
+      console.log(data);
+      this.cityMeteo = data;
+      this.search = ''
+      this.loading = false;
     }
+  },
+  async mounted() {
+    await this.searchCity();
   }
 }
 </script>
