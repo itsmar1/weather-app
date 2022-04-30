@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center font-comfortaa">
+  <div class="flex items-center font-comfortaa select-none">
       <div>
           <img :src="icon" :alt="description" class="w-[100px] lg:w-[200px] ">
       </div>
