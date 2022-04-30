@@ -1,13 +1,13 @@
 <template>
   <div class="flex items-center font-comfortaa">
       <div>
-          <img :src="icon" :alt="description" class="w-[200px] ">
+          <img :src="icon" :alt="description" class="w-[100px] lg:w-[200px] ">
       </div>
       <div class="mr-5">
-          <h2 class="text-9xl font-bold">{{ theDegree }}&#176;</h2>
+          <h2 class="text-6xl lg:text-9xl font-bold">{{ theDegree }}&#176;</h2>
       </div>
       <div class="flex flex-col items-start">
-          <h2 class="text-5xl capitalize font-bold">{{ city }} </h2>
+          <h2 class="text-3xl lg:text-5xl capitalize font-bold">{{ city }} </h2>
           <p>{{ time }}</p>
           <p>{{ description }} </p>
       </div>

@@ -16,6 +16,13 @@ export const getCityWeather = async (city) => {
 
 };
 
+export const getDailyWeather = async (lon, lat) => {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly&APPID=${API_KEY}&units=metric`);
+    const data = await response.json();
+    const { daily } = data;
+    return daily;
+};
+
 
 // Set the weather image
 const setImage = (data) => {
