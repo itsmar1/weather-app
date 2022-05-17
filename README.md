@@ -21,19 +21,19 @@ Open [http://localhost:8080](http://localhost:8080) with your browser to see the
 ## Tech Stack
 
 * [Node.js](https://nodejs.org/en/)
-* [Vue.js](https://github.com/expressjs/express) - The frontend framework used
-* [Tailwind](https://getbootstrap.com/) - CSS framework
+* [Vue.js](https://vuejs.org/) - The frontend framework used
+* [Tailwind](https://tailwindcss.com/) - CSS framework
 
 
 ## Docker
 Using docker compose run `docker-compose up`
 
 ## Live Demo
-Click [HERE](https://github.com/itsmar1) for demo
+Click [HERE](https://dailyweather-app.netlify.app) for demo
 
 ## Author
 
-[**Marwan Ahal**](https://github.com/itsmar1)
+[**Marwan Ahal**](https://www.soymarwan.com)
 
 ## License
 
